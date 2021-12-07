@@ -1,0 +1,90 @@
+/*Universal Styles*/
+
+html {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+
+#nav {
+    position: fixed;
+    background-size: cover;
+    width: 100%;
+    background-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block; 
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 1rem;
+}
+
+#main {
+    background-image: url(ressources/bonbons/background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+#head {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    color: white;
+    background-color: rgb(199, 156, 156);
+    border-bottom: 0.1rem solid rgb(173, 131, 145);
+    height: 10rem;
+}
+
+#options p,
+#search {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+}
+#options {
+    margin-right: 1.5rem;
+    
+}
+#login {
+    margin-left: 1rem;
+}
+
+#panier {
+    margin-left: 0.5rem
+}
+#title {
+    font-size: 4rem;
+    font-family: "Meow Script";
+    word-spacing: 0.6rem;
+    padding: 1rem;
+    border: 3px dotted rgb(196, 136, 171);
+    background-color: rgb(194, 162, 162);
+    
+}
+
+#candybar {
+    text-align: center;
+}
+header {
+    margin: auto;
+}
+
+/*Main section*/
+
+.candy {
+    margin-top: 5rem;
+
+}
