@@ -87,6 +87,7 @@ nav li a {
 }
 
 
+
 .beers {
     font-size: 1.2rem;
 }
@@ -112,7 +113,7 @@ nav li a {
 .onecandy {
     display: grid;
     background-color: rgba(255, 255, 255, 0.76);
-    grid-template: 11rem 2rem 2rem 3rem 3rem 2rem / 4.5rem 4rem 4.5rem;
+    grid-template: 11rem 2rem 2rem 3rem 3rem 2rem / 4.25rem 3.5rem 4.25rem;
     grid-template-areas: "photo photo photo"
                "title title title"
                "description description description"
@@ -173,4 +174,18 @@ nav li a {
 .moins {
     background-color:rgb(250, 244, 233);
     border: 1px solid white;
+}
+
+footer {
+    background-size: cover;
+    height: 3.5rem;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(250, 228, 218);
+    font-size: 1rem; 
+    color: white; 
+    border-bottom: 0.1rem solid rgb(255, 243, 243);
+    border-top: 0.1rem solid rgb(255, 243, 243);
+    z-index: 2;  
 }
