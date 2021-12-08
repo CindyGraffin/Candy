@@ -8,6 +8,8 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(250, 244, 233);
+    color:rgb(158, 156, 156);
 }
 
 /*Header*/
@@ -20,8 +22,8 @@ body {
     background-image: url(ressources/bonbons/guimauves.jpg);
     background-size: cover;
 
-    border-bottom: 0.1rem solid rgb(202, 200, 200);
-    height: 15rem;
+    border-bottom: 0.1rem solid rgb(255, 243, 243);
+    height: 16rem;
 }
 
 
@@ -30,7 +32,7 @@ body {
     font-family: "Meow Script";
     word-spacing: 1rem;
     padding: 0.7rem;
-    border: 3px dotted rgb(194, 192, 192);
+    border: 0.35rem dotted rgb(255, 243, 243);;
     background-color: rgba(158, 156, 156, 0.336);
     
 }
@@ -48,8 +50,8 @@ header {
     width: 100%;
     text-align: center;
     height: 3.5rem;
-    background-color: rgb(207, 207, 207);
-    border-bottom: 1px solid rgb(212, 212, 212);
+    background-color: rgb(250, 228, 218);
+    border-bottom: 1px solid rgb(255, 243, 243);
 }
 
 nav li {
@@ -72,34 +74,34 @@ nav li a {
 
 .candy {      
     background-size: cover;
-    height: 3rem;   
+    height: 3.5rem;   
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(250, 228, 218);
+    font-size: 1.8rem; 
+    color: white; 
+    border-bottom: 0.2rem solid rgb(255, 243, 243);
+    border-top: 0.1rem solid rgb(255, 243, 243);
+    z-index: 2;
 }
 
 
-.band-candy h2 {
-    
-    
-    font-size: 2rem; 
-    color: white;
-    
-}
 
 
 .sugar {
     display: flex;
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 45rem;
-    height: 50rem;
+    width: 47rem;
+    height: 46rem;
     flex-wrap: wrap;
     flex: 1;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color:rgb(255, 250, 245);
+    border: 0.3rem dotted rgb(255, 244, 244);
 }
 .photo {
    width: 12rem;
@@ -107,19 +109,20 @@ nav li a {
 }
 .onecandy {
     display: grid;
+    background-color: rgba(255, 255, 255, 0.76);
     grid-template: 11rem 2rem 2rem 3rem 2rem / 4.5rem 3rem 4.5rem;
     grid-template-areas: "photo photo photo"
                "title title title"
                "description description description"
                "price price price"
                "moins total plus";
-    border: 2px solid rgb(92, 92, 92);
+    
     justify-items: center;
 }
 
 .photo {
     grid-area: photo;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(255, 243, 243);;
 }
 .title {
     grid-area: title;
@@ -146,4 +149,12 @@ nav li a {
 .total {
     grid-area: total;
     
+}
+
+button {
+    border-radius: 50%;
+    color:rgb(158, 156, 156);
+    border: none;
+    font-weight: 800;
+    background-color: rgb(250, 228, 218);
 }
