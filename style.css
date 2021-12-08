@@ -17,9 +17,11 @@ body {
     justify-content: space-around;      
     align-items: center;
     color: white;
-    background-color: rgb(44, 44, 44);
-    border-bottom: 0.1rem solid rgb(114, 114, 114);
-    height: 12rem;
+    background-image: url(ressources/bonbons/guimauves.jpg);
+    background-size: cover;
+
+    border-bottom: 0.1rem solid rgb(202, 200, 200);
+    height: 15rem;
 }
 
 
@@ -28,8 +30,8 @@ body {
     font-family: "Meow Script";
     word-spacing: 1rem;
     padding: 0.7rem;
-    border: 3px dotted rgb(105, 105, 105);
-    background-color: rgba(136, 132, 132, 0.336);
+    border: 3px dotted rgb(194, 192, 192);
+    background-color: rgba(158, 156, 156, 0.336);
     
 }
 
@@ -46,8 +48,8 @@ header {
     width: 100%;
     text-align: center;
     height: 3.5rem;
-    background-color: rgb(124, 124, 124);
-    border-bottom: 1px solid rgb(97, 97, 97);
+    background-color: rgb(207, 207, 207);
+    border-bottom: 1px solid rgb(212, 212, 212);
 }
 
 nav li {
@@ -70,49 +72,34 @@ nav li a {
 
 .candy {      
     background-size: cover;
-    height: 5rem;   
+    height: 3rem;   
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(207, 207, 207);
 }
 
-.one {
-    background-image: url(ressources/bonbons/guimauves.jpg);
-}
+
 .band-candy h2 {
     
     
     font-size: 2rem; 
     color: white;
-    background-color: rgba(112, 112, 112, 0.438);
-    padding: 0px 1rem
+    
 }
-.two {
-    background-image: url(ressources/bonbons/acideband.jpg);
-}
-.three {
-    background-image: url(ressources/bonbons/backcit.jpg);  
-    background-position: 50% 50%;   
-}
-.four {
-    background-image: url(ressources/bonbons/coeur.jpg);
-}
-.five {
-    background-image: url(ressources/bonbons/noel.jpg);
-}
-.six {
-    background-image: url(ressources/bonbons/verre.jpg);
-}
+
 
 .sugar {
     display: flex;
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    width: 46rem;
-    height: 60rem;
+    width: 45rem;
+    height: 50rem;
     flex-wrap: wrap;
     flex: 1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .photo {
    width: 12rem;
@@ -120,12 +107,14 @@ nav li a {
 }
 .onecandy {
     display: grid;
-    grid-template: 12rem 2rem 3rem 2rem / 4.5rem 3rem 4.5rem;
+    grid-template: 11rem 2rem 2rem 3rem 2rem / 4.5rem 3rem 4.5rem;
     grid-template-areas: "photo photo photo"
                "title title title"
                "description description description"
+               "price price price"
                "moins total plus";
     border: 2px solid rgb(92, 92, 92);
+    justify-items: center;
 }
 
 .photo {
@@ -140,12 +129,17 @@ nav li a {
     grid-area: description;
     
 }
+.price {
+    grid-area: price;
+}
 .moins {
     grid-area: moins;
+    justify-self: right;
     
 }
 .plus {
     grid-area: plus;
+    justify-self: left;
     
 
 }
