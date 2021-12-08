@@ -2,7 +2,7 @@
 
 html {
     font-size: 16px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -12,12 +12,42 @@ body {
 
 /*Header*/
 
-#nav {
-    position: fixed;
-    background-size: cover;
-    width: 100%;
-    background-color: rgb(163, 163, 163);
+#head {
+    display: flex;
+    justify-content: space-around;      
+    align-items: center;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    border-bottom: 0.1rem solid rgb(114, 114, 114);
+    height: 12rem;
+}
+
+
+#title {
+    font-size: 5rem;
+    font-family: "Meow Script";
+    word-spacing: 1rem;
+    padding: 0.7rem;
+    border: 3px dotted rgb(105, 105, 105);
+    background-color: rgba(136, 132, 132, 0.336);
+    
+}
+
+#candybar {
     text-align: center;
+}
+header {
+    margin: auto;
+}
+
+#nav {
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    height: 3.5rem;
+    background-color: rgb(124, 124, 124);
+    border-bottom: 1px solid rgb(97, 97, 97);
 }
 
 nav li {
@@ -29,62 +59,97 @@ nav li a {
     text-decoration: none;
     color: white;
     margin-right: 1rem;
+    font-size: 1.1rem;
 }
 
-#main {
-    background-image: url(ressources/bonbons/background.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-
-#head {
-    display: flex;
-    justify-content: space-between;   
-    align-items: center;
-    color: white;
-    background-color: rgb(199, 156, 156);
-    border-bottom: 0.1rem solid rgb(173, 131, 145);
-    height: 10rem;
-}
-
-#options p,
-#search {
-    display: inline-block;
-    font-size: 1.2rem;
-    margin-left: 1.5rem;
-}
-#options {
-    margin-right: 1.5rem;
-    
-}
-#login {
-    margin-left: 1rem;
-}
-
-#panier {
-    margin-left: 0.5rem
-}
-#title {
-    font-size: 4rem;
-    font-family: "Meow Script";
-    word-spacing: 0.6rem;
-    padding: 1rem;
-    border: 3px dotted rgb(196, 136, 171);
-    background-color: rgb(194, 162, 162);
-    
-}
-
-#candybar {
-    text-align: center;
-}
-header {
-    margin: auto;
+#space {
+    height: 3.5rem;
 }
 
 /*Main section*/
 
-.candy {
-    margin-top: 5rem;
+.candy {      
+    background-size: cover;
+    height: 5rem;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.one {
+    background-image: url(ressources/bonbons/guimauves.jpg);
+}
+.band-candy h2 {
+    
+    
+    font-size: 2rem; 
+    color: white;
+    background-color: rgba(112, 112, 112, 0.438);
+    padding: 0px 1rem
+}
+.two {
+    background-image: url(ressources/bonbons/acideband.jpg);
+}
+.three {
+    background-image: url(ressources/bonbons/backcit.jpg);  
+    background-position: 50% 50%;   
+}
+.four {
+    background-image: url(ressources/bonbons/coeur.jpg);
+}
+.five {
+    background-image: url(ressources/bonbons/noel.jpg);
+}
+.six {
+    background-image: url(ressources/bonbons/verre.jpg);
+}
+
+.sugar {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 46rem;
+    height: 60rem;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.photo {
+   width: 12rem;
+   height: 12rem;
+}
+.onecandy {
+    display: grid;
+    grid-template: 12rem 2rem 3rem 2rem / 4.5rem 3rem 4.5rem;
+    grid-template-areas: "photo photo photo"
+               "title title title"
+               "description description description"
+               "moins total plus";
+    border: 2px solid rgb(92, 92, 92);
+}
+
+.photo {
+    grid-area: photo;
+    border-bottom: 1px solid black;
+}
+.title {
+    grid-area: title;
+    
+}
+.description {
+    grid-area: description;
+    
+}
+.moins {
+    grid-area: moins;
+    
+}
+.plus {
+    grid-area: plus;
+    
+
+}
+.total {
+    grid-area: total;
+    
 }
