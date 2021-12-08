@@ -23,7 +23,7 @@ body {
     background-size: cover;
 
     border-bottom: 0.1rem solid rgb(255, 243, 243);
-    height: 16rem;
+    height: 18rem;
 }
 
 
@@ -49,7 +49,7 @@ header {
     position: fixed;
     width: 100%;
     text-align: center;
-    height: 3.5rem;
+    height: 3rem;
     background-color: rgb(250, 228, 218);
     border-bottom: 1px solid rgb(255, 243, 243);
 }
@@ -67,7 +67,7 @@ nav li a {
 }
 
 #space {
-    height: 3.5rem;
+    height: 3rem;
 }
 
 /*Main section*/
@@ -81,13 +81,15 @@ nav li a {
     background-color: rgb(250, 228, 218);
     font-size: 1.8rem; 
     color: white; 
-    border-bottom: 0.2rem solid rgb(255, 243, 243);
+    border-bottom: 0.1rem solid rgb(255, 243, 243);
     border-top: 0.1rem solid rgb(255, 243, 243);
     z-index: 2;
 }
 
 
-
+.beers {
+    font-size: 1.2rem;
+}
 
 .sugar {
     display: flex;
@@ -95,13 +97,13 @@ nav li a {
     justify-content: space-around;
     align-items: center;
     width: 47rem;
-    height: 46rem;
+    height: 51rem;
     flex-wrap: wrap;
     flex: 1;
     margin-top: 3rem;
     margin-bottom: 3rem;
     background-color:rgb(255, 250, 245);
-    border: 0.3rem dotted rgb(255, 244, 244);
+    border: 0.3rem dotted rgb(250, 228, 218);
 }
 .photo {
    width: 12rem;
@@ -110,12 +112,13 @@ nav li a {
 .onecandy {
     display: grid;
     background-color: rgba(255, 255, 255, 0.76);
-    grid-template: 11rem 2rem 2rem 3rem 2rem / 4.5rem 3rem 4.5rem;
+    grid-template: 11rem 2rem 2rem 3rem 3rem 2rem / 4.5rem 4rem 4.5rem;
     grid-template-areas: "photo photo photo"
                "title title title"
                "description description description"
                "price price price"
-               "moins total plus";
+               "moins total plus"
+               "cart cart cart";
     
     justify-items: center;
 }
@@ -123,6 +126,12 @@ nav li a {
 .photo {
     grid-area: photo;
     border-bottom: 1px solid rgb(255, 243, 243);;
+}
+.cart {
+    grid-area: cart;
+    background-size: cover;
+    width: 100%;
+
 }
 .title {
     grid-area: title;
@@ -134,6 +143,7 @@ nav li a {
 }
 .price {
     grid-area: price;
+    font-weight: 600;
 }
 .moins {
     grid-area: moins;
@@ -148,13 +158,19 @@ nav li a {
 }
 .total {
     grid-area: total;
-    
+       
 }
 
-button {
-    border-radius: 50%;
+.cart {
+    
     color:rgb(158, 156, 156);
     border: none;
     font-weight: 800;
     background-color: rgb(250, 228, 218);
+}
+
+.plus,
+.moins {
+    background-color:rgb(250, 244, 233);
+    border: 1px solid white;
 }
