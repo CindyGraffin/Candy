@@ -1,4 +1,4 @@
-# MY CANDY BAR
+# MY CANDY SHOP
 
 ## Introduction
 
