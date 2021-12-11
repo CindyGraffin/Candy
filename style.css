@@ -36,15 +36,15 @@ body {
     word-spacing: 1rem;
     padding: 0.7rem;
     border: 0.35rem dotted rgb(255, 243, 243);;
-    background-color: rgba(158, 156, 156, 0.336);
-    
+    background-color: rgba(158, 156, 156, 0.336);   
 }
 #candybar {
     text-align: center;
 }
 
 /*Nav Bar*/
-#nav {
+.nav {
+    text-align:center;
     background-size: cover;
     position: fixed;
     width: 100%;
@@ -54,15 +54,17 @@ body {
     border-bottom: 1px solid rgb(255, 243, 243);
 }
 nav li {
-    list-style-type: none;
-    display: inline-block; 
+    list-style-type: none; 
+    display: inline-block;        
 }
 nav li a {
     text-decoration: none;
     color: white;
-    margin-right: 1rem;
+    margin-right: 1rem; 
     font-size: 1.1rem;
     font-weight: 800;
+    
+
 }
 
 /*Cart*/
@@ -205,13 +207,138 @@ footer {
     font-weight: 800;
 }
 
-
-
-/*Media Queries*/
-
-@media only screen and (max-width: 900px) {
-    nav {
-        height: 6rem;
-    }
-
+.hide,
+.hide2 {
+    display: none;
 }
+
+
+
+
+/*MEDIA QUERIES*/
+
+/*Little phone sizes*/
+@media only screen and (max-width: 330px) {
+    .nav {
+        font-size: 0.8rem;
+        height: 5.5rem;
+    }
+    nav li a {
+        font-size: 0.8rem;
+    }
+    #cart {
+        text-align: center;
+        position: relative;
+    }
+    .sugar {
+        width: 17rem;
+        height: 160rem;
+        padding: 0.6rem 0rem 0.6rem 0rem;
+    }
+    #space {
+        height:5.5rem;
+    }
+    #title {
+        font-size: 4rem;
+        font-family: "Meow Script";
+        word-spacing: 1rem;
+        padding: 0rem 2rem 0rem 2rem;
+        border: 0.35rem dotted rgb(255, 243, 243);
+        background-color: rgba(158, 156, 156, 0.336);   
+    }
+    .hide,
+    .hide2 {
+        display: block;
+    }
+    footer {
+        height: 5rem;   
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #me {
+        text-align: center;
+    }
+}
+
+/*Medium phone sizes*/
+@media only screen and (min-width:330px) and (max-width: 620px) {
+    .nav {
+        height: 6.5rem;
+        font-size: 0.9rem;
+    }
+    nav li a {
+        font-size: 0.9rem;
+    }
+    #cart {
+        text-align: center;
+        position: relative;
+    }
+    .sugar {
+        width: 20rem;
+        height: 160rem;
+        padding: 0.8rem 0rem 0.8rem 0rem;
+    }
+    #space {
+        height: 6.5rem;
+    }
+    #title {
+        font-size: 4rem;
+        font-family: "Meow Script";
+        word-spacing: 1rem;
+        padding: 0.7rem;
+        border: 0.35rem dotted rgb(255, 243, 243);
+        background-color: rgba(158, 156, 156, 0.336);   
+    }
+    .hide {
+        display: block;
+    }
+    footer {
+        height: 5rem;   
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #me {
+        text-align: center;
+    }
+}
+
+/*Big phone sizes*/
+@media only screen and (min-width: 620px) and (max-width: 710px) {
+    .nav {
+        height: 5.5rem;
+    } 
+    #cart {
+        position: relative;
+        text-align: center;
+    }
+    .sugar {
+        width: 33rem;
+        height: 80rem;
+    }
+    #space {
+        height:5.5rem;
+    }
+}
+
+/*Tablet sizes*/
+@media only screen and (min-width: 710px) and (max-width: 900px) {
+    .nav {
+        height: 5.5rem;
+    }
+    #cart {
+        position: relative;
+        text-align: center;
+    }
+    .sugar {
+        width: 37.5rem;
+        height: 80rem;
+    }
+    #space {
+        height:5.5rem;
+    }
+}
+
