@@ -45,43 +45,43 @@ lessQuantity('.lessstraw', '.straw')
 
 //Sour Section
 
-//Reglisse
+//Hitschies
 plusQuantity('.plushit', '.hit')
 lessQuantity('.lesshit', '.hit')
-//Bears
+//Worms
 plusQuantity('.pluswo', '.wo')
 lessQuantity('.lesswo', '.wo')
-//Schtroumpfs
+//Fruits
 plusQuantity('.plusfr', '.fr')
 lessQuantity('.lessfr', '.fr')
-//Eggs
+//Ovnis
 plusQuantity('.plusov', '.ov')
 lessQuantity('.lessov', '.ov')
-//Dragibus
+//Pastas
 plusQuantity('.pluspas', '.pas')
 lessQuantity('.lesspas', '.pas')
-//Strawberrys
+//Coca's Bottles
 plusQuantity('.pluscoc', '.coc')
 lessQuantity('.lesscoc', '.coc')
 
 //Love Section
 
-//One
+//Cherry Hearts
 plusQuantity('.plusone', '.one')
 lessQuantity('.lessone', '.one')
-//Two
+//Roses
 plusQuantity('.plustwo', '.two')
 lessQuantity('.lesstwo', '.two')
-//Three
+//Lollipops
 plusQuantity('.plusthree', '.three')
 lessQuantity('.lessthree', '.three')
-//Four
+//White Hearts
 plusQuantity('.plusfour', '.four')
 lessQuantity('.lessfour', '.four')
-//Five
+//LittleHearts
 plusQuantity('.plusfive', '.five')
 lessQuantity('.lessfive', '.five')
-//Six
+//Sour Hearts
 plusQuantity('.plussix', '.six')
 lessQuantity('.lesssix', '.six')
 
@@ -97,4 +97,47 @@ function addToCart(addButton, totalToAdd, price) {
     
 }
 
-addToCart('.egg1', '.egg', 5);
+//Classic Section
+
+//Reglisse
+addToCart('.addreg', '.reg', 5);
+//Bears
+addToCart('.addbears', '.bears', 3);
+//Schtroumpfs
+addToCart('.addsch', '.sch', 5);
+//Eggs
+addToCart('.addegg', '.egg', 5);
+//Dragibus
+addToCart('.addragi', '.dragi', 3);
+//Strawberries
+addToCart('.addstraw', '.straw', 5);
+
+//Sour Section
+
+//Hitschies
+addToCart('.addhit', '.hit', 6);
+//Worms
+addToCart('.addwo', '.wo', 5);
+//Fruits
+addToCart('.addfr', '.fr', 4);
+//Ovnis
+addToCart('.addov', '.ov', 5);
+//Pastas
+addToCart('.addpas', '.pas', 6);
+//Coca's Bottles
+addToCart('.addcoc', '.coc', 5);
+
+//Love Section 
+
+//Cherry Hearts
+addToCart('.addone', '.one', 6);
+//Roses
+addToCart('.addtwo', '.two', 10);
+//Lollipops
+addToCart('.addthree', '.three', 8);
+//White Hearts
+addToCart('.addfour', '.four', 6);
+//Littles Hearts
+addToCart('.addfive', '.five', 6);
+//SourHearts
+addToCart('.addsix', '.six', 5);

@@ -45,8 +45,9 @@ header {
 }
 #cart {
     float: right;
-    margin-right: 1rem;
+    margin-left: 6rem;
     font-weight: 600;
+    position: absolute;
 }
 #nav {
     background-size: cover;
