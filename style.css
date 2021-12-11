@@ -14,16 +14,16 @@ body {
 
 /*Header*/
 
-#head {
+#header {
     display: flex;
     justify-content: space-around;      
     align-items: center;
     color: white;
     background-image: url(ressources/bonbons/guimauves.jpg);
     background-size: cover;
-
     border-bottom: 0.1rem solid rgb(255, 243, 243);
     height: 18rem;
+    margin: auto;
 }
 
 
@@ -40,9 +40,7 @@ body {
 #candybar {
     text-align: center;
 }
-header {
-    margin: auto;
-}
+
 #cart {
     float: right;
     margin-left: 2rem;

@@ -6,74 +6,76 @@
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <title>Candy Bar</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
         <script src="./script.js" defer></script>
         <link href="style.css" rel="stylesheet">
     </head>
 
-    <body>
-        
-        
+
+<body>       
+
 
 <!--Header section with title and nav bar-->
 
-        <header>
-            <!--Navbar-->
-            <div id="nav">
-                <nav>
+    <header>
+
+        <!--Navbar-->
+        <div id="nav">
+            <nav>
                 <ul>
                     <li><a href="#">Home<a></li>
                     <li><a href="#">Classic<a></li>
                     <li><a href="#">Sour<a></li>
                     <li><a href="#">Love<a></li>
                     <li><a href="#">Contact<a></li>
+                    <!--Cart sum-->
                     <li id="cart"><span>My cart:  </span><span class="totalcart">0</span><span>€</span></li>
                 </ul>
             </nav>
-            </div>
-            <div id="space"></div>
-            <!--Title and options-->
-            <div id="header">
-            <div id="head">
-                
-                <div id="candybar">
-                    <h1 id="title">My Candy Shop</h1>
-                </div>
-                
-            </div>
-            
-            
         </div>
-        </header>
+        <div id="space"></div>
+
+        <!--Title-->
+        <div id="header">                
+            <div id="candybar">
+                <h1 id="title">My Candy Shop</h1>
+            </div>
+        </div>
+
+    </header>
         
         
 <!--Main section-->
 
+
+    <!--Classic section-->
+    <section id="classic-candys">
+
+        <!--Section title-->
         <div class="candy">
             <div class="band-candy" id="one">
                 <h2>Classic</h2>
             </div>
         </div>
 
+        <!--Section items-->
         <div class="sugar">
 
-            <div class="container">
-                <div class="onecandy">
-                    <img class="photo" src="ressources/bonbons/oeufs.jpg"/>
-                    <h3 class="title">Eggs</h3>
-                    <p class="description">Delicious candy !</p>
-                    <p class=price>5€/kg</p>
-                    <button class="plus plusegg">+</button>
-                    <p class="total egg">0</p>
-                    <button class="moins lessegg">-</button>
-                    <button class= "cart add addegg">Add To Cart</button>
-                    <button class= "cart remove removegg">Remove To Cart</button>
-                </div>
-                </div>           
-
-            <div class="container">
+            <!--Eggs-->
+            <div class="onecandy">
+                <img class="photo" src="ressources/bonbons/oeufs.jpg"/>
+                <h3 class="title">Eggs</h3>
+                <p class="description">Delicious candy !</p>
+                <p class=price>5€/kg</p>
+                <button class="plus plusegg">+</button>
+                <p class="total egg">0</p>
+                <button class="moins lessegg">-</button>
+                <button class= "cart add addegg">Add To Cart</button>
+                <button class= "cart remove removegg">Remove To Cart</button>
+            </div>
+            
+            <!--Dragibus-->
             <div class="onecandy">
                 <img class="photo" src="ressources/bonbons/dragibus.jpg"/>
                 <h3 class="title">Dragibus</h3>
@@ -85,9 +87,8 @@
                 <button class= "cart add addragi">Add To Cart</button>
                 <button class= "cart remove removedragi">Remove To Cart</button>
             </div>
-            </div>
-
-            <div class="container">
+            
+            <!--Strawberrys-->
             <div class="onecandy">
                 <img class="photo" src="ressources/bonbons/tagada.jpg"/>
                 <h3 class="title">Strawberrys</h3>
@@ -98,10 +99,9 @@
                 <button class="moins lessstraw">-</button>
                 <button class= "cart add addstraw">Add To Cart</button>
                 <button class= "cart remove removestraw">Remove To Cart</button>
-            </div>
-            </div>
+            </div>           
 
-            <div class="container">
+            <!--Reglisse-->
             <div class="onecandy">
                 <img class="photo" src="ressources/bonbons/reglisse.jpg"/>
                 <h3 class="title">Reglisse</h3>
@@ -113,9 +113,8 @@
                 <button class= "cart add addreg">Add To Cart</button>
                 <button class= "cart remove removereg">Remove To Cart</button>
             </div>
-            </div>
-
-            <div class="container">
+            
+            <!--Schtroumpfs-->
             <div class="onecandy">
                 <img class="photo" src="ressources/bonbons/schtroumpfs.jpg"/>
                 <h3 class="title">Schtroumpfs</h3>
@@ -128,47 +127,52 @@
                 <button class= "cart add remove">Remove To Cart</button>
                 <button class= "cart remove removesch">Remove To Cart</button>
             </div>
+           
+            <!--Beers-->
+            <div class="onecandy">
+                <img class="photo" src="ressources/bonbons/ours.jpg"/>
+                <h3 class="title">Beers</h3>
+                <p class="description">Delicious candy !</p>
+                <p class=price>3€/kg</p>
+                <button class="plus plusbears">+</button>
+                <p class="total bears">0</p>
+                <button class="moins lessbears">-</button>
+                <button class= "cart add addbears">Add To Cart</button>
+                <button class= "cart remove removebears">Remove To Cart</button>
             </div>
-
-            <div class="container">
-                <div class="onecandy">
-                    <img class="photo" src="ressources/bonbons/ours.jpg"/>
-                    <h3 class="title">Beers</h3>
-                    <p class="description">Delicious candy !</p>
-                    <p class=price>3€/kg</p>
-                    <button class="plus plusbears">+</button>
-                    <p class="total bears">0</p>
-                    <button class="moins lessbears">-</button>
-                    <button class= "cart add addbears">Add To Cart</button>
-                    <button class= "cart remove removebears">Remove To Cart</button>
-            </div>
-            </div>
-                     
-
+         
         </div>
 
+    </section>
+
+
+    <!--Sour Section-->
+    <section id="sour-candys">
+
+        <!--Section Title-->
         <div class="candy">
             <div class="band-candy" id="one">
                 <h2>Sour</h2>
             </div>
         </div>
 
+        <!--Section items-->
         <div class="sugar">
-            <div class="container">
-                <div class="onecandy">
-                    <img class="photo" src="ressources/bonbons/tuby.jpg"/>
-                    <h3 class="title">Hitschies</h3>
-                    <p class="description">Delicious candy !</p>
-                    <p class=price>6€/kg</p>
-                    <button class="plus plushit">+</button>
-                    <p class="total hit">0</p>
-                    <button class="moins lesshit">-</button>
-                    <button class= "cart add addhit">Add To Cart</button>
-                    <button class= "cart remove removehit">Remove To Cart</button>
-            </div>
+
+            <!--Hitschies-->
+            <div class="onecandy">
+                <img class="photo" src="ressources/bonbons/tuby.jpg"/>
+                <h3 class="title">Hitschies</h3>
+                <p class="description">Delicious candy !</p>
+                <p class=price>6€/kg</p>
+                <button class="plus plushit">+</button>
+                <p class="total hit">0</p>
+                <button class="moins lesshit">-</button>
+                <button class= "cart add addhit">Add To Cart</button>
+                <button class= "cart remove removehit">Remove To Cart</button>
             </div>
 
-            <div class="container">
+            <!--Worms-->
             <div class="onecandy">
                 <img class="photo" src="ressources/bonbons/sour.jpeg"/>
                 <h3 class="title">Worms</h3>
@@ -180,9 +184,8 @@
                 <button class= "cart add addwo">Add To Cart</button>
                 <button class= "cart remove removewo">Remove To Cart</button>
             </div>
-            </div>
 
-            <div class="container">
+           <!--Fruits-->
             <div class="onecandy">
                 <img class="photo" src="ressources/bonbons/fruits.jpg"/>
                 <h3 class="title">Fruits</h3>
@@ -194,9 +197,8 @@
                 <button class= "cart add addfr">Add To Cart</button>
                 <button class= "cart remove removefr">Remove To Cart</button>
             </div>
-            </div>
-
-            <div class="container">
+            
+            <!--Ovnis-->
             <div class="onecandy">
                 <img class="photo" src="ressources/bonbons/soucoupe.jpg"/>
                 <h3 class="title">Ovnis</h3>
@@ -206,11 +208,10 @@
                 <p class="total ov">0</p>
                 <button class="moins lessov">-</button>
                 <button class= "cart add addov">Add To Cart</button>
-                <button class= "cart remove removeov">Remove To Cart</button>
-            </div>
+                <button class= "cart remove removeov">Remove To Cart</button>          
             </div>
 
-            <div class="container">
+            <!--Pastas-->
             <div class="onecandy">
                 <img class="photo" src="ressources/bonbons/band.jpg"/>
                 <h3 class="title">Pastas</h3>
@@ -221,10 +222,9 @@
                 <button class="moins lesspas">-</button>
                 <button class= "cart add addpas">Add To Cart</button>
                 <button class= "cart remove removepas">Remove To Cart</button>
-            </div>
-            </div>
+            </div>      
 
-            <div class="container">
+            <!--Coca's Bottle-->
             <div class="onecandy">
                 <img class="photo" src="ressources/bonbons/coca.jpg"/>
                 <h3 class="title">Coca's Bottles</h3>
@@ -234,34 +234,41 @@
                 <p class="total coc">0</p>
                 <button class="moins lesscoc">-</button>
                 <button class= "cart add addcoc">Add To Cart</button>
-                <button class= "cart remove removecoc">Remove To Cart</button>
-            </div>
+                <button class= "cart remove removecoc">Remove To Cart</button>        
             </div>          
 
         </div>
 
+    </section>
+
+
+    <!--Love Section-->
+    <section id="love-candys">
+        
+        <!--Section title-->
         <div class="candy">
             <div class="band-candy" id="one">
                 <h2>Love</h2>
             </div>
         </div>
 
+        <!--Section items-->
         <div class="sugar">
-            <div class="container">
-                <div class="onecandy">
-                    <img class="photo" src="ressources/bonbons/pique.jpg"/>
-                    <h3 class="title">Cherry Hearts</h3>
-                    <p class="description">Delicious candy !</p>
-                    <p class=price>6€/kg</p>
-                    <button class="plus plusone">+</button>
-                    <p class="total one">0</p>
-                    <button class="moins lessone">-</button>
-                    <button class= "cart add addone">Add To Cart</button>
-                    <button class= "cart remove removeone">Remove To Cart</button>
+            
+            <!--Cherry Hearts-->
+            <div class="onecandy">
+                <img class="photo" src="ressources/bonbons/pique.jpg"/>
+                <h3 class="title">Cherry Hearts</h3>
+                <p class="description">Delicious candy !</p>
+                <p class=price>6€/kg</p>
+                <button class="plus plusone">+</button>
+                <p class="total one">0</p>
+                <button class="moins lessone">-</button>
+                <button class= "cart add addone">Add To Cart</button>
+                <button class= "cart remove removeone">Remove To Cart</button>
             </div>
-            </div>
-
-            <div class="container">
+          
+            <!--Roses-->
             <div class="onecandy">
                 <img class="photo" src="ressources/bonbons/valentin7.jpg"/>
                 <h3 class="title">Roses</h3>
@@ -272,10 +279,9 @@
                 <button class="moins lesstwo">-</button>
                 <button class= "cart add addtwo">Add To Cart</button>
                 <button class= "cart remove removetwo">Remove To Cart</button>
-            </div>
-            </div>
+            </div>       
 
-            <div class="container">
+            <!--Lollipops-->
             <div class="onecandy">
                 <img class="photo" src="ressources/bonbons/sucette.jpg"/>
                 <h3 class="title">Lollipops</h3>
@@ -287,9 +293,8 @@
                 <button class= "cart add addthree">Add To Cart</button>
                 <button class= "cart remove removethree">Remove To Cart</button>
             </div>
-            </div>
-
-            <div class="container">
+           
+            <!--White Hearts-->    
             <div class="onecandy">
                 <img class="photo" src="ressources/bonbons/blanc.jpg"/>
                 <h3 class="title">White Hearts</h3>
@@ -301,9 +306,8 @@
                 <button class= "cart add addfour">Add To Cart</button>
                 <button class= "cart remove removefour">Remove To Cart</button>
             </div>
-            </div>
-
-            <div class="container">
+           
+            <!--Little Hearts-->
             <div class="onecandy">
                 <img class="photo" src="ressources/bonbons/coeur2.jpg"/>
                 <h3 class="title">Little Hearts</h3>
@@ -315,9 +319,8 @@
                 <button class= "cart add addfive">Add To Cart</button>
                 <button class= "cart remove removefive">Remove To Cart</button>
             </div>
-            </div>
-
-            <div class="container">
+       
+            <!--Sour Hearts-->
             <div class="onecandy">
                 <img class="photo" src="ressources/bonbons/fraise.jpg"/>
                 <h3 class="title">Sour Hearts</h3>
@@ -328,21 +331,30 @@
                 <button class="moins lesssix">-</button>
                 <button class= "cart add addsix">Add To Cart</button>
                 <button class= "cart remove removesix">Remove To Cart</button>
-            </div>
-            </div>          
+            </div>               
 
         </div>
+
+    </section>
+
+
+    <!--Footer-->    
+    <footer>
         
-        <footer>
-            <div >
-                <p>Cindy Graffin<br>graffincindy@gmail.com</p> 
-            </div>
-            <div> 
-                <p>&copy Copyright All Rights Reserved</p>
-            </div>
-        </footer>
+        <!--Contact-->
+        <div >
+            <p>Cindy Graffin<br>graffincindy@gmail.com</p> 
+        </div>
+        <!--Copyright-->
+        <div> 
+            <p>&copy Copyright All Rights Reserved</p>
+        </div>
+
+    </footer>
+
  
-    </body>
+</body>
+
 
 </html>
 
