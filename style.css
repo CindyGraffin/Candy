@@ -231,7 +231,7 @@ footer {
         position: relative;
     }
     .sugar {
-        width: 17rem;
+        width: 15rem;
         height: 160rem;
         padding: 0.6rem 0rem 0.6rem 0rem;
     }
@@ -341,4 +341,29 @@ footer {
         height:5.5rem;
     }
 }
+
+/*Large screen sizes*/
+@media only screen and (min-width: 1450px) and (max-width: 1700px) {
+   
+    .sugar {
+        width: 70rem;
+        height: 55rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    
+}
+
+/*Very large screen sizes*/
+@media only screen and (min-width: 1700px) {
+   
+    .sugar {
+        width: 100rem;
+        height: 30rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    
+}
+
 
