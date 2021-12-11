@@ -1,10 +1,9 @@
-/*Universal Styles*/
+/*UNIVERSAL STYLES*/
 
 html {
     font-size: 16px;
     font-family: "Poppins", sans-serif;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -12,11 +11,15 @@ body {
     color:rgb(158, 156, 156);
 }
 
-/*Header*/
 
+
+
+/*HEADER*/
+
+/*Overall layout*/
 #header {
     display: flex;
-    justify-content: space-around;      
+    justify-content: center;      
     align-items: center;
     color: white;
     background-image: url(ressources/bonbons/guimauves.jpg);
@@ -26,7 +29,7 @@ body {
     margin: auto;
 }
 
-
+/*Title 'My Candy Shop'*/
 #title {
     font-size: 5rem;
     font-family: "Meow Script";
@@ -36,17 +39,11 @@ body {
     background-color: rgba(158, 156, 156, 0.336);
     
 }
-
 #candybar {
     text-align: center;
 }
 
-#cart {
-    float: right;
-    margin-left: 2rem;
-    font-weight: 600;
-    position: absolute;
-}
+/*Nav Bar*/
 #nav {
     background-size: cover;
     position: fixed;
@@ -56,12 +53,10 @@ body {
     background-color: rgb(250, 228, 218);
     border-bottom: 1px solid rgb(255, 243, 243);
 }
-
 nav li {
     list-style-type: none;
     display: inline-block; 
 }
-
 nav li a {
     text-decoration: none;
     color: white;
@@ -70,12 +65,25 @@ nav li a {
     font-weight: 800;
 }
 
+/*Cart*/
+#cart {
+    float: right;
+    margin-left: 2rem;
+    font-weight: 600;
+    position: absolute;
+}
+
+/*To plut header correctly*/
 #space {
     height: 3rem;
 }
 
-/*Main section*/
 
+
+
+/*MAIN SECTION*/
+
+/*Section titles*/
 .candy {      
     background-size: cover;
     height: 3.5rem;   
@@ -90,12 +98,7 @@ nav li a {
     z-index: 2;
 }
 
-
-
-.beers {
-    font-size: 1.2rem;
-}
-
+/*Layout for each candy section*/
 .sugar {
     display: flex;
     margin: auto;
@@ -109,15 +112,14 @@ nav li a {
     margin-bottom: 3rem;
     background-color:rgb(255, 250, 245);
     border: 0.3rem dotted rgb(250, 228, 218);
+    padding: 1rem 2rem;
 }
-.photo {
-   width: 12rem;
-   height: 12rem;
-}
+
+/*Layout for each candy in one section*/
 .onecandy {
     display: grid;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-right: 2.2rem;
+    margin-left: 2.2rem;
     background-color: rgba(255, 255, 255, 0.76);
     grid-template: 11rem 2rem 2rem 3rem 3rem 1.6rem 1.6rem / 4.25rem 3.5rem 4.25rem;
     grid-template-areas: "photo photo photo"
@@ -130,10 +132,33 @@ nav li a {
     
     justify-items: center;
 }
-
+/*Grid Area*/
 .photo {
     grid-area: photo;
+    width: 12rem;
+    height: 12rem;
     border-bottom: 1px solid rgb(255, 243, 243);;
+}
+.title {
+    grid-area: title;    
+}
+.description {
+    grid-area: description;   
+}
+.price {
+    grid-area: price;
+    font-weight: 600;
+}
+.moins {
+    grid-area: moins;
+    justify-self: right;   
+}
+.plus {
+    grid-area: plus;
+    justify-self: left;
+}
+.total {
+    grid-area: total;      
 }
 .add {
     grid-area: cart;
@@ -142,32 +167,12 @@ nav li a {
     grid-area: cartR;
     margin-top: 0.1rem;
 }
-.title {
-    grid-area: title;
-    
-}
-.description {
-    grid-area: description;
-    
-}
-.price {
-    grid-area: price;
-    font-weight: 600;
-}
-.moins {
-    grid-area: moins;
-    justify-self: right;
-    
-}
-.plus {
-    grid-area: plus;
-    justify-self: left;
-    
 
-}
-.total {
-    grid-area: total;
-       
+/*Add and remove to cart buttons*/
+.plus,
+.moins {
+    background-color:rgb(250, 244, 233);
+    border: 1px solid white;
 }
 
 .cart {
@@ -180,11 +185,9 @@ nav li a {
 }
 
 
-.plus,
-.moins {
-    background-color:rgb(250, 244, 233);
-    border: 1px solid white;
-}
+
+
+/*FOOTER*/
 
 footer {
     background-size: cover;
@@ -200,3 +203,5 @@ footer {
     z-index: 2;  
     font-weight: 800;
 }
+
+
