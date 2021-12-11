@@ -41,6 +41,10 @@ body {
 #candybar {
     text-align: center;
 }
+.hide,
+.hide2 {
+    display: none;
+}
 
 /*Nav Bar*/
 .nav {
@@ -207,11 +211,6 @@ footer {
     font-weight: 800;
 }
 
-.hide,
-.hide2 {
-    display: none;
-}
-
 
 
 
@@ -219,27 +218,8 @@ footer {
 
 /*Little phone sizes*/
 @media only screen and (max-width: 330px) {
-    .nav {
-        font-size: 0.8rem;
-        height: 5.5rem;
-    }
-    nav li a {
-        font-size: 0.8rem;
-    }
-    #cart {
-        text-align: center;
-        position: relative;
-    }
-    .sugar {
-        width: 15rem;
-        height: 160rem;
-        padding: 0.6rem 0rem 0.6rem 0rem;
-    }
-    #space {
-        height:5.5rem;
-    }
     #title {
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: "Meow Script";
         word-spacing: 1rem;
         padding: 0rem 2rem 0rem 2rem;
@@ -249,6 +229,31 @@ footer {
     .hide,
     .hide2 {
         display: block;
+    }
+    .nav {
+        font-size: 0.8rem;
+        height: 4.6rem;
+    }
+    nav li a {
+        font-size: 0.8rem;
+    }
+    #space {
+        height:4.6rem;
+    }
+    #cart {
+        text-align: center;
+        position: relative;
+        top: 1rem;
+        font-weight: 1000;
+    }
+    .sugar {
+        width: 15rem;
+        height: 160rem;
+        padding: 0.6rem 0rem 0.6rem 0rem;
+    }
+    .candy {
+        height: 2.5rem;
+        font-size: 1.5rem;
     }
     footer {
         height: 5rem;   
@@ -264,6 +269,20 @@ footer {
 
 /*Medium phone sizes*/
 @media only screen and (min-width:330px) and (max-width: 620px) {
+    #title {
+        font-size: 4rem;
+        font-family: "Meow Script";
+        word-spacing: 1rem;
+        padding: 0.7rem;
+        border: 0.35rem dotted rgb(255, 243, 243);
+        background-color: rgba(158, 156, 156, 0.336);   
+    }
+    .hide {
+        display: block;
+    }
+    #space {
+        height: 6.5rem;
+    }
     .nav {
         height: 6.5rem;
         font-size: 0.9rem;
@@ -279,20 +298,6 @@ footer {
         width: 20rem;
         height: 160rem;
         padding: 0.8rem 0rem 0.8rem 0rem;
-    }
-    #space {
-        height: 6.5rem;
-    }
-    #title {
-        font-size: 4rem;
-        font-family: "Meow Script";
-        word-spacing: 1rem;
-        padding: 0.7rem;
-        border: 0.35rem dotted rgb(255, 243, 243);
-        background-color: rgba(158, 156, 156, 0.336);   
-    }
-    .hide {
-        display: block;
     }
     footer {
         height: 5rem;   
@@ -315,13 +320,13 @@ footer {
         position: relative;
         text-align: center;
     }
-    .sugar {
-        width: 33rem;
-        height: 80rem;
-    }
     #space {
         height:5.5rem;
     }
+    .sugar {
+        width: 33rem;
+        height: 80rem;
+    }   
 }
 
 /*Tablet sizes*/
@@ -333,18 +338,20 @@ footer {
         position: relative;
         text-align: center;
     }
+    #space {
+        height:5.5rem;
+    }
     .sugar {
         width: 37.5rem;
         height: 80rem;
-    }
-    #space {
-        height:5.5rem;
     }
 }
 
 /*Large screen sizes*/
 @media only screen and (min-width: 1450px) and (max-width: 1700px) {
-   
+    #title {
+        font-size: 6rem;
+    }
     .sugar {
         width: 70rem;
         height: 55rem;
@@ -355,8 +362,10 @@ footer {
 }
 
 /*Very large screen sizes*/
-@media only screen and (min-width: 1700px) {
-   
+@media only screen and (min-width: 1700px) {  
+    #title {
+        font-size: 6.5rem;
+    }
     .sugar {
         width: 100rem;
         height: 30rem;
