@@ -63,6 +63,6 @@ Phone:
 ## Author
 
 Graffin Cindy <br/>
-<b>Mail:</b>graffincindy@gmail.com<br/>
+<b>Mail:</b> graffincindy@gmail.com<br/>
 <b>GitHub:</b> https://github.com/CindyGraffin?tab=repositories<br/>
 <b>LinkedIn:</b> https://www.linkedin.com/in/cindy-graffin-495b43222/<br/>
