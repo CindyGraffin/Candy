@@ -45,7 +45,7 @@ header {
 }
 #cart {
     float: right;
-    margin-left: 6rem;
+    margin-left: 2rem;
     font-weight: 600;
     position: absolute;
 }
@@ -101,10 +101,10 @@ nav li a {
 .sugar {
     display: flex;
     margin: auto;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 47rem;
-    height: 51rem;
+    width: 50rem;
+    height: 55rem;
     flex-wrap: wrap;
     flex: 1;
     margin-top: 3rem;
@@ -118,14 +118,17 @@ nav li a {
 }
 .onecandy {
     display: grid;
+    margin-right: 2rem;
+    margin-left: 2rem;
     background-color: rgba(255, 255, 255, 0.76);
-    grid-template: 11rem 2rem 2rem 3rem 3rem 2rem / 4.25rem 3.5rem 4.25rem;
+    grid-template: 11rem 2rem 2rem 3rem 3rem 1.6rem 1.6rem / 4.25rem 3.5rem 4.25rem;
     grid-template-areas: "photo photo photo"
                "title title title"
                "description description description"
                "price price price"
                "moins total plus"
-               "cart cart cart";
+               "cart cart cart"
+               "cartR cartR cartR";
     
     justify-items: center;
 }
@@ -134,11 +137,12 @@ nav li a {
     grid-area: photo;
     border-bottom: 1px solid rgb(255, 243, 243);;
 }
-.cart {
+.add {
     grid-area: cart;
-    background-size: cover;
-    width: 100%;
-
+}
+.remove {
+    grid-area: cartR;
+    margin-top: 0.1rem;
 }
 .title {
     grid-area: title;
@@ -169,12 +173,14 @@ nav li a {
 }
 
 .cart {
-    
     color:rgb(158, 156, 156);
     border: none;
     font-weight: 800;
     background-color: rgb(250, 228, 218);
+    background-size: cover;
+    width: 100%;
 }
+
 
 .plus,
 .moins {
