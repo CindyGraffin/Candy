@@ -67,7 +67,8 @@ nav li a {
 
 /*Cart*/
 #cart {
-    float: right;
+    right: 2rem;
+    top: 1rem;
     margin-left: 2rem;
     font-weight: 600;
     position: absolute;
@@ -205,3 +206,12 @@ footer {
 }
 
 
+
+/*Media Queries*/
+
+@media only screen and (max-width: 900px) {
+    nav {
+        height: 6rem;
+    }
+
+}
