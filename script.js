@@ -84,3 +84,17 @@ lessQuantity('.lessfive', '.five')
 //Six
 plusQuantity('.plussix', '.six')
 lessQuantity('.lesssix', '.six')
+
+//Function to add to cart
+
+function addToCart(addButton, totalToAdd, price) {
+    //create a variable which is the "add to cart" button
+    let addToCartButton=document.querySelector(addButton);
+    function addQuantityXPrice () {
+        document.querySelector('.totalcart').innerHTML=parseInt(document.querySelector('.totalcart').innerHTML)+parseInt(document.querySelector(totalToAdd).innerHTML)*price;
+    }
+    return addToCartButton.onclick = addQuantityXPrice;
+    
+}
+
+addToCart('.egg1', '.egg', 5);

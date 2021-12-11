@@ -43,7 +43,11 @@ body {
 header {
     margin: auto;
 }
-
+#cart {
+    float: right;
+    margin-right: 1rem;
+    font-weight: 600;
+}
 #nav {
     background-size: cover;
     position: fixed;
@@ -64,6 +68,7 @@ nav li a {
     color: white;
     margin-right: 1rem;
     font-size: 1.1rem;
+    font-weight: 800;
 }
 
 #space {
@@ -188,4 +193,5 @@ footer {
     border-bottom: 0.1rem solid rgb(255, 243, 243);
     border-top: 0.1rem solid rgb(255, 243, 243);
     z-index: 2;  
+    font-weight: 800;
 }
