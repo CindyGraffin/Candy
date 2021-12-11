@@ -25,6 +25,13 @@ Laptop:
 Large screen:
 <div align="center">
   <kbd>
+    <img src="ressources\soursection.png" width="450"/>
+  </kbd>
+</div>
+<br>
+Very Large screen:
+<div align="center">
+  <kbd>
     <img src="ressources\Footer.png" width="500"/>
   </kbd>
 </div>
