@@ -65,4 +65,4 @@ Phone:
 Graffin Cindy <br/>
 <b>Mail:</b> graffincindy@gmail.com<br/>
 <b>GitHub:</b> https://github.com/CindyGraffin?tab=repositories<br/>
-<b>LinkedIn:</b> https://www.linkedin.com/in/cindy-graffin/<br/>
+<b>LinkedIn:</b> [https://www.linkedin.com/in/cindy-graffin/](https://www.linkedin.com/in/cindygraffin/)<br/>
